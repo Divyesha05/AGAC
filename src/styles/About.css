@@ -1,81 +1,75 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Image Section */
 .image-x {
   display: flex;
-  justify-content: space-between; 
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  justify-content: space-between;
 }
 
 .image-x img {
-  width: 25vw;
-  height: 220px; 
-  /* object-fit: cover;  */
-  border-radius: 0px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-width: 320px; /* Restrict image width on larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-
+/* About Us Section */
 .about-us {
-  /* padding: 0 20px 20px 20px; */
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
+  padding: 0 20px;
 }
 
 .about-header {
-  background-color: green; 
-  color: white; 
-  font-size: 30px; 
-  font-weight:Extrabold; 
+  background-color: green;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
   padding: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
-
 
 .container-y {
   display: flex;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
   gap: 20px;
-  flex-direction: row; 
 }
 
-
-.left-section {
+.left-section, .right-section {
   flex: 1;
-  padding: 20px; 
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+  padding: 20px;
+  max-width: 100%; /* Ensure sections do not overflow */
 }
-
 
 .importance {
-  flex: 1; 
-  padding: 20px; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; 
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
-
-
-.importance h2 {
-  margin-bottom: 10px;
-}
-
 
 .buttons ul, .points ul {
-  list-style-type: none; 
+  list-style-type: none;
   padding: 0;
 }
 
@@ -91,83 +85,39 @@ body {
   cursor: pointer;
 }
 
-
 .image-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
 
-
 .image-small {
-  grid-column: span 2; 
+  grid-column: span 2;
   width: 100%;
   height: 200px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .image-large {
   width: 100%;
   height: 300px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
-
-.right-section {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  gap: 20px;
-
-}
-
-
-.right-section h2 {
+.right-section h2, .importance h2 {
   margin-top: 0;
-  padding: 10px;
 }
-
 
 .right-section p {
-  color: rgb(83, 204, 83); 
+  color: rgb(83, 204, 83);
 }
-
 
 .right-section button {
-  background-color: green; 
-  color: white; 
+  background-color: green;
+  color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-}
-
-
-
-.importance h2 {
-  margin-bottom: 10px;
-}
-
-.buttons ul, .points ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.buttons li, .points li {
-  margin-bottom: 10px;
-}
-
-.buttons button {
-  background-color: green; 
-  color: white; 
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.right-section p {
-  color: rgb(83, 204, 83); 
 }
 
 .points ul {
@@ -175,8 +125,7 @@ body {
   text-align: left;
   display: inline-block;
   margin: 0;
-  padding: 10 20px;
-  margin-top: 20;
+  padding: 10px 20px;
 }
 
 .importance-images {
@@ -188,98 +137,63 @@ body {
 .importance-images img {
   margin: 0 10px;
   width: 200px;
-  height: auto;   
+  height: auto;
 }
 
-
-
-
+/* Introduction Section */
 .introduction {
-  padding: 30px 20px;
-  background-color: #f1f1f1; 
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+}
+
+.introduction h2 {
+  background-color: grey;
+  opacity: 0.8;
+  font-size: 30px;
+  margin-bottom: 20px;
   color: black;
-  font-family: 'Manrope', 'sans-serif';
-  
-}
-
-
-.introduction-about h2 {
-  background-color: grey;
-  opacity: 0.8; 
-  font-size: 30px; 
-  margin-bottom: 10px;
-  color: black; 
-  text-align: center; 
-  padding: 8px;
-  font-weight: bolder;
-}
-.timeline  h2 {
-  background-color: grey;
-  opacity: 0.8; 
-  font-size: 30px; 
-  margin-bottom: 10px;
-  color: black; 
-  text-align: center; 
-  padding: 8px;
-  font-weight: bolder;
+  text-align: center;
 }
 
 .intro-container {
   display: flex;
-  flex-direction: column; 
-  gap: 20px; 
+  flex-direction: column;
+  gap: 20px;
 }
-
 
 .intro-section {
   display: flex;
   align-items: center;
   text-align: justify;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-
-.intro-section.left {
-  justify-content: flex-start; 
-  gap: 10vw;
-  
-}
-
-.intro-section.right {
-  justify-content: flex-end;
-  gap: 10vw;
-  margin-top: 5vw;
-}
-
 
 .intro-image {
-  width: 400px;
-  height: 200; 
-  margin: 0 0px; 
+  width: 100%;
+  max-width: 400px;
+  height: auto; /* Maintain aspect ratio */
 }
 
-
 .intro-section.left img.intro-image {
-  order: -1; 
-  margin-right: 10px; 
+  order: -1;
+  margin-right: 10px;
 }
 
 .intro-section.right img.intro-image {
-  order: 1; 
-  margin-left: 10px; 
+  order: 1;
+  margin-left: 10px;
 }
 
-
 .intro-section p {
-  max-width: 600px; 
+  max-width: 600px;
   margin: 0;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 1.5;
 }
 
-
-
-
+/* Goals Section */
 .goals {
   padding: 40px 20px;
   text-align: center;
@@ -289,18 +203,20 @@ body {
 .goals h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color:black; 
+  color: black;
 }
 
 .goal-container {
   display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .goal-image {
-  width: 650px; 
-  height: 300;
+  width: 100%;
+  max-width: 650px;
+  height: auto; /* Maintain aspect ratio */
   margin-right: 20px;
 }
 
@@ -314,26 +230,26 @@ body {
 .goal {
   margin: 20px 0;
 }
-.goal-icon{
+
+.goal-icon {
   width: 30px;
   height: 30px;
 }
+
 .goal h3 {
   font-size: 20px;
-  margin-bottom: 0px;
-  color: black; 
+  margin-bottom: 0;
+  color: black;
 }
 
 .goal p {
   font-size: 18px;
-  margin:0 0px 0 3vw;
-  text-align: start;
-
+  margin-bottom: 0;
 }
 
 .goal button {
   padding: 10px 20px;
-  background-color:green; 
+  background-color: green;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -344,23 +260,19 @@ body {
 }
 
 .goal button:hover {
-  background-color:green; 
+  background-color: green;
 }
 
-.hexer{
-  display: flex;
-  gap: 10px;
-}
-
+/* Timeline Section */
 .timeline {
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 
 .timeline-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Stack items on smaller screens */
   align-items: center;
   position: relative;
   padding: 30px 0;
@@ -368,8 +280,10 @@ body {
 
 .timeline-item {
   position: relative;
-  width: 20%;
+  width: 100%;
+  max-width: 300px; /* Restrict width on larger screens */
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .timeline-item::before {
@@ -418,34 +332,13 @@ body {
 }
 
 .timeline-content p {
-  font-size:16px;
+  font-size: 16px;
   color: #333;
-}
-
-@media screen and (max-width: 768px) {
-  .timeline-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .timeline-item {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .timeline-item::before, .timeline-item::after {
-      display: none;
-  }
-
-  .timeline-item:last-child {
-      margin-bottom: 0;
-  }
 }
 
 /* Team Section */
 .team {
   width: 100%;
-  max-width: 100%;
   padding: 20px;
   text-align: center;
   background-color: none;
@@ -460,34 +353,29 @@ body {
 
 .team-members {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
   justify-content: center;
-  gap: 80px;
+  gap: 20px;
 }
 
 .member {
-  background-color: #d3d3d3; 
-  padding: 40px;
-  width: 350px;
+  background-color: #d3d3d3;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
-
 
 .member h3 {
   margin-top: 0;
   font-size: 22px;
   position: relative;
   text-align: center;
-  height: 60px; /* Set a fixed height */
+  height: 60px;
   display: flex;
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
-}
-.member hr {
-  border: 0;
-  border-top: 2px solid black;
-  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .member p {
@@ -497,145 +385,96 @@ body {
 
 .button-container {
   display: flex;
-  justify-content:center;
-  gap: 20px; /* Adjust gap between buttons */
+  justify-content: flex-end;
+  gap: 20px;
   width: 100%;
-  
 }
-
-button {
-  padding: 10px 20px;
-  
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #218838;
-}
-
 
 /* Parent Company Section */
-
 .parent-company-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 7vw;
- 
 }
 
 .parent-company-title {
   font-size: 30px;
   margin-bottom: 20px;
-  color: black; /* Adjust color as needed */
-  
+  color: black;
 }
 
 .parent-company {
-  width: 80%;
-  max-width: 100%; 
-  padding: 20px;
-  background-color: #28a745;
-  color: white;
-  text-align: center;
-  border-radius: 0px; 
-   
-}
-
-.parent-company-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: left; 
-}
-
-.parent-company-image {
-  width: 500px; 
-  height: 100%;
-  margin-right: 20px;
-  border-radius: 0px;
-  object-fit: cover;
-}
-
-.text-content {
-  max-width: 500px; 
-}
-
-.text-content p {
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: white;
-  color: #28a745;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-button:hover {
-  background-color: #19c73f;
-  color: white;
-}
-
-.question-section {
-  position: relative;
   width: 100%;
-  height: 300px; 
-  background: url('/about12.jpg') no-repeat center center;
-  background-size: cover;
+  padding: 20px;
+  background-color: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.parent-company-logo {
   display: flex;
+  flex-wrap: wrap; /* Wrap logos on smaller screens */
   justify-content: center;
-  align-items: center;
-  /* margin-bottom: 40px; */
+  gap: 20px;
 }
 
-.overlay {
-  text-align: center;
-  border-radius: 0px;
-  width: fit-content;
+.parent-company-logo img {
+  max-width: 150px;
+  height: auto;
+  margin: 10px;
 }
 
-.overlay-title {
-  background: rgba(47, 189, 47, 0.8); /* Background color for h2 */
-  padding: 20px 40px;
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .image-x img {
+    max-width: 100%; /* Adjust for smaller screens */
+  }
+
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .intro-section img.intro-image {
+    margin: 0;
+  }
+
+  .goal-container {
+    flex-direction: column;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
 }
 
-.overlay-content {
-  background: rgba(132, 223, 132, 0.8); /* Background color for p */
-  padding: 20px 40px;
-}
+@media (max-width: 480px) {
+  .image-x img {
+    max-width: 100%;
+  }
 
-.overlay h2 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+  .about-header {
+    font-size: 24px;
+    padding: 15px;
+  }
 
-.overlay p {
-  color: white;
-  font-size: 18px;
-  margin: 0;
-}
+  .container-y {
+    flex-direction: column;
+  }
 
-.overlay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; /* Optional: adds space between the buttons */
-}
+  .left-section, .right-section, .importance {
+    max-width: 100%;
+    padding: 10px;
+  }
 
-.bg-gray-500 {
-  width: 200px; /* Optional: set a fixed width for the buttons */
-  margin-bottom: 10px; /* Optional: adds space between the buttons */
+  .import-image {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .goal-container {
+    flex-direction: column;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
 }
