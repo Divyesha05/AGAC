@@ -22,42 +22,40 @@ import img15 from "../../images/about11.jpg"
 function About() {
   return (
     <>
-      <section class="image-x">
-        <img src={img1} alt="image" />
-        <img src={img2} alt="image" />
-        <img src={img3} alt="image" />
-        <img src={img4} alt="image" />
+     <section class="image-x">
+        <img src="images/about1.jpg" alt="image" />
+        <img src="images/about2.jpg" alt="image" />
+        <img src="images/about3.jpg" alt="image" />
+        <img src="images/about4.jpg" alt="image" />
       </section>
 
       <section class="about-us">
-        <div className="gradient-background flex items-center justify-center font-semibold">
-          <h1 className="text-2xl text-white">About Us</h1>
-        </div>
+        <div class="about-header">ABOUT US</div>
         <div class="container-y">
           <div class="left-section">
             <div class="image-grid">
-              <img src={img5} alt=" Image" class="image-small" />
-              <img src={img6} alt=" Image" class="image-large" />
-              <img src={img7} alt=" Image" class="image-large" />
+              <img src="images/about5.jpg" alt=" Image" class="image-small" />
+              <img src="images/about6.jpg" alt=" Image" class="image-large" />
+              <img src="images/about7.jpg" alt=" Image" class="image-large" />
             </div>
           </div>
           <div class="importance">
             <h2>Importance of integrating AI and aquaculture</h2>
             <div class="buttons">
-              <ul style={{ color: "green" }}>
+              <ul>
                 <li>
-                  <a href="#">Innovative Technology</a>
+                  <button>Community Engagement</button>
                 </li>
                 <li>
-                  <a href="#">Competitive Pricing</a>
+                  <button>Competitive Pricing</button>
                 </li>
                 <li>
-                  <a href="#">Community Engagement</a>
+                  <button>Innovative Technology</button>
                 </li>
               </ul>
             </div>
             <div class="points">
-              <ul style={{ fontWeight: "bold", marginTop: "10vw" }}>
+              <ul>
                 <li>Environmental stewardship</li>
                 <li>Economic growth</li>
                 <li>Developing solutions to enhance food security</li>
@@ -84,11 +82,11 @@ function About() {
         </div>
       </section>
 
-      <section class="introduction-about">
+      <section class="introduction">
         <h2>Introduction to AGAC</h2>
-        <div class="introduction">
+        <section class="introduction">
           <div class="intro-section left">
-            <img src={img8} alt=" Image" class="intro-image" />
+            <img src="images/about8.jpg" alt=" Image" class="intro-image" />
             <p>
               The Aquatech Genomic Agriculture Center (AGAC) is a pioneering
               research institution dedicated to advancing the integration of
@@ -101,7 +99,7 @@ function About() {
             </p>
           </div>
           <div class="intro-section right">
-            <img src={img9} alt=" Image 2" class="intro-image" />
+            <img src="images/about9.jpg" alt=" Image 2" class="intro-image" />
             <p>
               The Aquatech Genomic Agriculture Center (AGAC) is a
               forward-thinking institution at the cutting edge of agricultural
@@ -114,79 +112,60 @@ function About() {
               nutrition.
             </p>
           </div>
-        </div>
+        </section>
       </section>
 
       <section class="goals">
         <h2>Our Goals</h2>
         <div class="goal-container">
-          <img src={img10} alt="Image" class="goal-image" />
-          <div class="goal-list">
-            <div class="goal">
-              <div className="hexer">
-                <div>
-                  <img src={img11} alt="Images" class="goal-icon" />{" "}
-                </div>
-                <div>
-                  <h3> Advancing Genomic Research</h3>
-                </div>
-              </div>
-
+          <img src="images/about10.jpg" alt="Image" class="goal-image" />
+          <ul class="goal-list">
+            <li class="goal">
+              <h3>
+                <img src="images/tick.png" alt="Images" class="goal-icon" />{" "}
+                Advancing Genomic Research
+              </h3>
               <p>
                 Utilizing state-of-the-art genetic engineering and AI
                 technologies to develop innovative solutions for genetic
                 diseases and improve crop and livestock resilience.
               </p>
-            </div>
-            <div class="goal">
-              <div className="hexer">
-                <div>
-                  <img src={img12} alt="Images" class="goal-icon" />{" "}
-                </div>
-                <div>
-                  <h3> Precision Nutrition</h3>
-                </div>
-              </div>
-
+            </li>
+            <li class="goal">
+              <h3>
+                <img src="images/tick1.png" alt="Images" class="goal-icon" />{" "}
+                Precision Nutrition
+              </h3>
               <p>
                 Developing personalized nutrition plans based on genetic and
                 health data to optimize individual health outcomes and prevent
                 chronic diseases.
               </p>
-            </div>
-            <div class="goal">
-              <div className="hexer">
-                <div>
-                  <img src={img13} alt="Images" class="goal-icon" />{" "}
-                </div>
-                <div>
-                  <h3>Environmental Conservation</h3>
-                </div>
-              </div>
+            </li>
+            <li class="goal">
+              <h3>
+                <img src="images/tick2.png" alt="Images" class="goal-icon" />{" "}
+                Environmental Conservation
+              </h3>
               <p>
                 Implementing sustainable practices that minimize environmental
                 impact, promote biodiversity, and ensure the health of
                 ecosystems.
               </p>
-            </div>
-            <div class="goal">
-              <div className="hexer">
-                <div>
-                  <img src={img14} alt="Images" class="goal-icon" />{" "}
-                </div>
-                <div>
-                  <h3> Sustainable Food Production</h3>
-                </div>
-              </div>
-
+            </li>
+            <li class="goal">
+              <h3>
+                <img src="images/tick3.png" alt="Images" class="goal-icon" />{" "}
+                Sustainable Food Production
+              </h3>
               <p>
                 Enhancing aquaculture practices to increase efficiency, yield,
                 and sustainability, ensuring a reliable food supply for future
                 generations.
               </p>
-              <button style={{margin:"20px 0 0 20px"}}>Discover More</button>
-            </div>
-          </div>
+              <button>Discover More</button>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -231,88 +210,60 @@ function About() {
         </div>
       </section>
       <section class="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-members">
-          <div class="member">
-            <h3>Dr. Jane Doe, CEO</h3>
-
-            <p>
-              Dr. Doe is a renowned expert in genetics and AI, with over 20
-              years of experience in the field. Her leadership and vision have
-              been instrumental in shaping AGAC's strategic direction and
-              fostering a culture of innovation.
-            </p>
-            <div class="button-container">
-              <button class="bg-gray-500 text-white border-none px-4 py-2 rounded cursor-pointer hover:bg-gray-600">
-                Know More
-              </button>
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    <h3>Dr. Jane Doe, CEO</h3>
+                    <hr/>
+                    <p>Dr. Doe is a renowned expert in genetics and AI, with over 20 years of experience in the field. Her leadership and vision have been instrumental in shaping AGAC's strategic direction and fostering a culture of innovation.</p>
+                    <div class="button-container">
+                        <button>Know More</button>
+                    </div>
+                </div>
+                <div class="member">
+                    <h3>John Smith, CTO</h3>
+                    <hr/>
+                    <p>John Smith is a leader in AI technology development and implementation. His expertise in creating scalable AI solutions has driven AGAC's technological advancements.</p>
+                    <div class="button-container">
+                        <button>Know More</button>
+                    </div>
+                </div>
+                <div class="member">
+                    <h3>Emily White, Head of Research</h3>
+                    <hr/>
+                    <p>Emily White is a distinguished scientist in aquaculture and genetic research. Her pioneering work has significantly contributed to AGAC's research capabilities and impact.</p>
+                    <div class="button-container">
+                        <button>Know More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="member">
-            <h3>John Smith, CTO</h3>
-
-            <p>
-              John Smith is a leader in AI technology development and
-              implementation. His expertise in creating scalable AI solutions
-              has driven AGAC's technological advancements.
-            </p>
-            <div class="button-container">
-              <button class="bg-gray-500 text-white border-none px-4 py-2 rounded cursor-pointer hover:bg-gray-600">
-                Know More
-              </button>
-            </div>
-          </div>
-          <div class="member">
-            <h3>Emily White, Head of Research</h3>
-
-            <p>
-              Emily White is a distinguished scientist in aquaculture and
-              genetic research. Her pioneering work has significantly
-              contributed to AGAC's research capabilities and impact.
-            </p>
-            <div class="button-container">
-              <button class="bg-gray-500 text-white border-none px-4 py-2 rounded cursor-pointer hover:bg-gray-600">
-                Know More
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+        </section>
       <section class="parent-company-section">
-        <h2 class="parent-company-title">Our Parent Company</h2>
-        <div class="parent-company">
-          <div class="parent-company-content">
-            <img
-              src={img15}
-              alt=" Image"
-              class="parent-company-image"
-            />
+    <h2 class="parent-company-title">Our Parent Company</h2>
+    <div class="parent-company">
+        <div class="parent-company-content">
+            <img src="images/about11.jpg" alt="Company Image" class="parent-company-image" />
             <div class="text-content">
-              <p>
-                AGAC operates under the aegis of Phoenix Labs, a leading biotech
-                company committed to leveraging technology for societal benefit.
-                Phoenix Labs’ mission is to push the boundaries of scientific
-                research and develop practical applications that improve quality
-                of life. Their support and resources have been instrumental in
-                the establishment and growth of AGAC.
-              </p>
-              <button class="bg-gray-500 text-white border-none px-4 py-2 rounded cursor-pointer hover:bg-gray-600">
-                Know More
-              </button>
+                <p>
+                    AGAC operates under the aegis of Phoenix Labs, a leading biotech
+                    company committed to leveraging technology for societal benefit.
+                    Phoenix Labs’ mission is to push the boundaries of scientific
+                    research and develop practical applications that improve quality
+                    of life. Their support and resources have been instrumental in
+                    the establishment and growth of AGAC.
+                </p>
+                <button>Know More</button>
             </div>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
+
 
       <section class="question-section">
+      <img src="images/about12.jpg" alt="Background Image"></img>
         <div class="overlay">
-          <button class="bg-gray-500 text-white border-none px-4 py-2 rounded cursor-pointer hover:bg-gray-600">
-            Let us Know
-          </button>
-          <button class="bg-gray-500 text-white border-none px-4 py-2 rounded cursor-pointer hover:bg-gray-600">
-            Have any Questions?
-          </button>
+          <h2>Let us Know</h2>
+          <p>Have Any Question?</p>
         </div>
       </section>
     </>
