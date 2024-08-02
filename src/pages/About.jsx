@@ -26,7 +26,7 @@ function About() {
         <img src={img1} alt="image" />
         <img src={img2} alt="image" />
         <img src={img3} alt="image" />
-        <img src={img4} alt="image" />
+        
       </section>
 
       <section class="about-us">
