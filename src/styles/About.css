@@ -7,10 +7,10 @@
 .image-x img {
   width: 100%;
   height: auto;
-  max-width: 375px;
+  max-width: 450px;
   border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Add margin for spacing */
+  margin-bottom: 0px; /* Add margin for spacing */
 }
 
 /* Media Queries for Responsiveness */
@@ -60,7 +60,7 @@ body {
 
 .about-us {
   background-color: #f9f9f9;
-  padding: 20px;
+  padding: 0px;
 }
 
 .about-header {
