@@ -1,19 +1,20 @@
 .image-x {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; 
 }
 
 .image-x img {
-  width: 25vw;
-  height: 220px; 
-  /* object-fit: cover;  */
+  width: 100%;
+  height: auto; 
+  max-width: 375px;/* object-fit: cover;  */
   border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Manrope, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -505,7 +506,7 @@ body {
 
 button {
   padding: 10px 20px;
-  
+  background-color: #77d18c;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -576,7 +577,7 @@ button:hover {
 button {
   padding: 10px 20px;
   background-color: white;
-  color: #28a745;
+  color: #77d18c;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -607,7 +608,7 @@ button:hover {
 }
 
 .overlay-title {
-  background: rgba(47, 189, 47, 0.8); /* Background color for h2 */
+  background: rgba(112, 210, 112, 0.8); /* Background color for h2 */
   padding: 20px 40px;
 }
 
